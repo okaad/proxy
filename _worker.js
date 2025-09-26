@@ -2,7 +2,7 @@ export default {
     async fetch(request, env) {
       let url = new URL(request.url);
       if (url.pathname.startsWith('/')) {
-        url.hostname="embyplus.org";  //你需要反代的域名
+        url.hostname="emby.as174.de";  //你需要反代的域名
         let new_request=new Request(url,request);
         return fetch(new_request);
       }
@@ -11,5 +11,6 @@ export default {
     }
 
   };
+
 
 
