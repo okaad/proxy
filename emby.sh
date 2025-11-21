@@ -169,4 +169,9 @@ server {
         proxy_pass http://emby.bangumi.ca;
         proxy_set_header Host emby.bangumi.ca;
         add_header 'Access-Control-Allow-Origin' '*';
+        add_header 'Access-Control-Allow-Credentials' 'true';
+        add_header 'Access-Control-Allow-Methods' '*';
+        add_header 'Access-Control-Allow-Headers' '*';
+    }
+}
 
